@@ -1,0 +1,35 @@
+.dustbin {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    cursor: pointer;
+  }
+  
+  .lid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ebebeb;
+    transition: transform 0.3s ease;
+  }
+  
+  .dustbin.open .lid {
+    transform: rotate(-45deg);
+  }
+  
+  .body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #a9a9a9;
+    transition: opacity 0.3s ease;
+  }
+  
+  .dustbin.open .body {
+    opacity: 0;
+  }
+  
