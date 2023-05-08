@@ -1,6 +1,30 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+*,html{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; 
+}
+body{
+  background-color: #F5F5F5;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#lid-wrapper {
+  transform-origin: center;
+}
+
+#lid-wrapper:hover #lid {
+  animation: openlid 1s ease;
+  transform-origin: center;
+}
+@keyframes openlid {
+  from {
+    transform: rotateZ(0deg);
   }
+  to {
+    transform: rotateZ(45deg);
+  }
+}
